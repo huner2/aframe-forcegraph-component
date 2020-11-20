@@ -71,7 +71,7 @@ AFRAME.registerComponent('forcegraph', {
     linkVisibility: { parse: parseAccessor, default: true },
     linkColor: { parse: parseAccessor, default: 'color' },
     linkAutoColorBy: { parse: parseAccessor, default: '' }, // color links with the same field equally
-    linkOpacity: { type: 'number', default: 0.2 },
+    linkOpacity: { parse: parseAccessor, default: 0.2 },
     linkWidth: { parse: parseAccessor, default: 0 },
     linkResolution: { type: 'number', default: 6 }, // how many radial segments in each line cylinder's geometry
     linkCurvature: { parse: parseAccessor, default: 0 },
